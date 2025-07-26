@@ -14,7 +14,7 @@ export function App() {
 	
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
-			if (e.key === "0") updateCount(count + 1)
+			if (e.key === "0" || "space") updateCount(count + 1)
 		}
 		window.addEventListener("keydown", handleKeyDown)
 		return () => window.removeEventListener("keydown", handleKeyDown)
