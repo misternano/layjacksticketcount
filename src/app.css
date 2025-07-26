@@ -11,13 +11,23 @@
 }
 
 .title {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.button--minus:hover {
+  outline: palevioletred 2px solid;
+  border: 1px solid white;
 }
 
 .button--reset {
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  right: auto;
   background-color: indianred;
-  outline: white 3px solid;
+  outline: red 3px solid;
 }
 
 .button--reset:hover {

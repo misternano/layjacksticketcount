@@ -28,7 +28,7 @@ export function App() {
 					<button onClick={() => updateCount(count + 1)}>
 						count is {count}
 					</button>
-					<button onClick={() => updateCount(count - 1)}>
+					<button className="button--minus" onClick={() => updateCount(count - 1)}>
 						-1
 					</button>
 					<button className="button--reset" onClick={() => updateCount(0)}>
