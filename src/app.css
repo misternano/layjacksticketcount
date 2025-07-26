@@ -9,3 +9,25 @@
   width: 50vw;
   padding: 2em;
 }
+
+.title {
+  margin-bottom: 6rem;
+}
+
+.button--reset {
+  margin-top: 2rem;
+  background-color: indianred;
+  outline: white 3px solid;
+}
+
+.button--reset:hover {
+  background-color: darkred;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

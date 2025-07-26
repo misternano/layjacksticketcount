@@ -14,7 +14,7 @@ export function App() {
 	
 	useEffect(() => {
 		const handleKeyDown = (e: KeyboardEvent) => {
-			if (e.key === "0" || "space") updateCount(count + 1)
+			if (e.key === "0" || e.code === "Space") updateCount(count + 1)
 		}
 		window.addEventListener("keydown", handleKeyDown)
 		return () => window.removeEventListener("keydown", handleKeyDown)
@@ -22,11 +22,19 @@ export function App() {
 	
 	return (
 		<>
-			<div class="card">
-				<p>Layjack's Ticket Count</p>
-				<button onClick={() => updateCount(count + 1)}>
-					count is {count}
-				</button>
+			<div className="card">
+				<p className="title">Layjack's Ticket Count</p>
+				<section>
+					<button onClick={() => updateCount(count + 1)}>
+						count is {count}
+					</button>
+					<button onClick={() => updateCount(count - 1)}>
+						-1
+					</button>
+					<button className="button--reset" onClick={() => updateCount(0)}>
+						RESET
+					</button>
+				</section>
 			</div>
 		</>
 	)
